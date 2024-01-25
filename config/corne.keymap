@@ -37,9 +37,9 @@
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
-   &kp A &kp Z &kp E &kp R &kp T     &kp Y   &kp U  &kp I     &kp O     &kp P
-   &kp Q &kp S &kp D &kp F &kp G     &kp H   &kp J  &kp K     &kp L     &kp M
-   &kp W &kp X &kp C &kp V &kp B     &kp N   &kp COMMA  &kp SEMI &kp COLON &kp DOT
+   &kp Q &kp W &kp E &kp R &kp T     &kp Y   &kp U  &kp I     &kp O     &kp P
+   &kp A &kp S &kp D &kp F &kp G     &kp H   &kp J  &kp K     &kp L     &kp SEMI
+   &kp Z &kp X &kp C &kp V &kp B     &kp N   &kp SEMI &kp COMMA &kp COLON &kp DOT
         &kp LCTRL &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &kp TAB
                         >;
                 };
