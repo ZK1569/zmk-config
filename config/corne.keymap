@@ -28,6 +28,11 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+        
+        {
+            bindings = <&kp LCTRL>;
+            key-positions = <7 8>;
+        }
     };
 
     behaviors {
@@ -47,14 +52,14 @@
 // -----------------------------------------------------------------------------------------
 // |  A  |  Z  |  E  |  R  |  T  |     |  Y  |  U   |  I   |  O   | P |
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   | M | 
-// |  W  |  X  |  C  |  V  |  B  |     |  N  |  M   |  ,   |  ;   | = |
-//             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
+// |  W  |  X  |  C  |  V  |  B  |     |  N  |  M   |  ,   |  ;   | . |
+//             | CMD | mo1 | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SEMI)
    AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp COMMA &kp DOT   &kp LS(COMMA)
-    &kp LCTRL &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &kp TAB
+    &kp LGUI &mo 1     &kp SPACE     AS(RET) &kp BSPC  &kp TAB
                         >;
                 };
 
