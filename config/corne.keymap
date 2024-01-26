@@ -29,7 +29,7 @@
             key-positions = <0 1>;
         };
         
-        {
+        ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <7 8>;
         };
