@@ -16,7 +16,19 @@
       zmk,matrix_transform = &five_column_transform;
     };
 
-    {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            key-positions = <14 15>;
+            bindings = <&kp TAB>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <2 1>;
+        };
+    };
 
     behaviors {
         as: auto_shift {
@@ -77,14 +89,4 @@
                         >;
                 };
         };
-};
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-    };
 };
