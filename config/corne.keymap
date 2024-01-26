@@ -33,14 +33,14 @@
 // -----------------------------------------------------------------------------------------
 // |  A  |  Z  |  E  |  R  |  T  |     |  Y  |  U   |  I   |  O   | P |
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   | M | 
-// |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |  :   | . |
-//             | CRL | CMD | SPC |     | ENT | RSE  | BSPC |
+// |  W  |  X  |  C  |  V  |  B  |     |  N  |  M   | CTRL | META | . |
+//             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T     &kp Y   &kp U  &kp I     &kp O     &kp P
-   &kp A &kp S &kp D &kp F &kp G     &kp H   &kp J  &kp K     &kp L     &kp SEMI
-   &kp Z &kp X &kp C &kp V &kp B     &kp N   &kp FR_COMMA &kp FR_SEMI &kp FR_COLON &kp FR_DOT
-        &kp LCTRL &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &kp TAB
+   AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
+   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SEMI)
+   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp COMMA &kp DOT   &kp EQUAL
+    &kp LCTRL &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &kp TAB
                         >;
                 };
 
