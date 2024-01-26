@@ -40,7 +40,7 @@
                         bindings = <
    AS(A) AS(Z) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
    AS(Q) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(M)
-   AS(W) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp FR_COMMA &kp DOT   &kp EQUAL
+   AS(W) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp FR_COMMA &kp DOT   &kp SEMI
     &kp LCTRL &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &kp TAB
                         >;
                 };
