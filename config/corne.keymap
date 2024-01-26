@@ -32,7 +32,7 @@
         {
             bindings = <&kp LCTRL>;
             key-positions = <7 8>;
-        }
+        };
     };
 
     behaviors {
