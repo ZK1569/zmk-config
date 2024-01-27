@@ -88,8 +88,8 @@
                         bindings = <
 
    AS(N6)    AS(N2)    AS(N3)    &kp MINUS AS(N5)        &kp N1    AS(N7)    &kp N2   &kp N7   &kp N0
-   AS(MINUS) AS(EQUAL) &kp LBRC  &kp N5    &kp RBKT      &kp RBKT &kp RBKT  &kp RBRC  &kp LBKT &kp N9
-   &kp GRAVE &kp LS(GRAVE) &trans    AS(COMMA) &kp COLON     &kp SEMI  AS(DOT)   &kp LCTRL &kp RALT &kp LBKT
+   AS(MINUS) AS(EQUAL) &kp LBRC  &kp N5    &kp RBKT      &kp RBRC &kp RBKT  &kp RBRC  &kp LBKT &kp N9
+   &kp GRAVE &kp LS(GRAVE) &trans    AS(COMMA) &kp COLON     &kp LS(M) AS(DOT)   &kp LCTRL &kp RALT &kp LBKT
                        &kp LGUI  &kp ESC   &kp SPACE     AS(RET)   &trans    &kp TAB
                         >;
                 };
