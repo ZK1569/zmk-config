@@ -73,7 +73,7 @@
                         bindings = <
    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp LS(N8) &kp LPAR  &kp RPAR
    &kp BSLH     &kp N4       &kp N3       &kp EQUAL    &kp LS(EQUAL)    &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &kp LS(FSLH)
-   &trans       &trans       &trans       &trans       &trans           &kp LS(M)    &kp LS(DOT) &kp TILDE  &kp N8 &kp (FSLH)
+   &trans       &trans       &trans       &trans       &trans           &kp LS(M)    &kp LS(DOT) &kp LS(COLON) &kp N8 &kp (FSLH)
                              &kp LGUI     &trans       &kp SPACE        AS(RET)   &kp ESC   &kp TAB
                         >;
                 };
