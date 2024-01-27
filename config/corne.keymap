@@ -52,13 +52,13 @@
 // ---------------------------------------------------------------------
 // |  A  |  Z  |  E  |  R  |  T  |     |  Y  |  U   |  I   |   O   | P |
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |   L   | M | 
-// |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | . |
+// |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | = |
 //             | mo1 | CMD | SPC |     | ENT | BSPC | mo2  |
                         display-name = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SEMI)
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp COMMA &kp DOT   &kp LS(COMMA)
+   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp COMMA &kp DOT   &kp (FSLH)
         &mo 1 &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &mo 2
                         >;
                 };
@@ -66,14 +66,14 @@
                 lower_layer {
 // ---------------------------------------------------------------------
 // |  1 |   2 |  3  |  4  |   5 |     |   6 |   7 |   8 |   9  |  0  |
-// | `  | '   |  "  |  -  |  _  |     | LFT | DWN |  UP | RGT  |  +  |
-// |    |     |     |     |     |     |  \  |  ?  |  !  |  /   |  =  |
+// | `  | '   |  "  |  -  |  _  |     | LFT | DWN |  UP | RGT  |  !  |
+// |    |     |     |     |     |     |  \  |  ?  |  .  |  /   |  +  |
 //               | GUI |     | SPC |     | ENT | ESC | TAB |
                         display-name = "Lower";
                         bindings = <
    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT          &kp CARET        &kp AMPS    &kp LS(N8)  &kp LPAR    &kp RPAR
-   &kp BSLH     &kp N4       &kp N3       &kp EQUAL    &kp LS(EQUAL)      &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp LS(FSLH)
-   &trans       &trans       &trans       &trans       &trans             &kp LS(RA(DOT))  &kp LS(M)   &kp N8      &kp LS(DOT) &kp (FSLH)
+   &kp BSLH     &kp N4       &kp N3       &kp EQUAL    &kp LS(EQUAL)      &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp N8
+   &trans       &trans       &trans       &trans       &trans             &kp LS(RA(DOT))  &kp LS(M)   &kp LS(COMMA)      &kp LS(DOT) &kp LS(FSLH)
                              &trans       &trans       &trans             &trans           &kp ESC     &kp TAB
                         >;
                 };
