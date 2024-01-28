@@ -33,6 +33,11 @@
             bindings = <&kp LCTRL>;
             key-positions = <20 21>;
         };
+
+        ctrlleft {
+            bindings = <&kp LCTRL>;
+            key-positions = <28 29>;
+        };
     };
 
     behaviors {
