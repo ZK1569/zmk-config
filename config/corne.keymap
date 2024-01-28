@@ -16,6 +16,30 @@
       zmk,matrix_transform = &five_column_transform;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+        };
+        
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <20 21>;
+        };
+
+        ctrlleft {
+            bindings = <&kp LCTRL>;
+            key-positions = <28 29>;
+        };
+    };
+
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -30,48 +54,48 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U   |  I   |  O   | P |
-// |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   | ' | 
-// |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   | CTRL | META | . |
-//             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
+// ---------------------------------------------------------------------
+// |  A  |  Z  |  E  |  R  |  T  |     |  Y  |  U   |  I   |   O   | P |
+// |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |   L   | M | 
+// |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | = |
+//             | mo1 | CMD | SPC |     | ENT | BSPC | mo2  |
                         display-name = "Base";
                         bindings = <
-   AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
-   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SQT)
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp LCTL  &kp RALT  AS(DOT)
-        &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
+   &kp Q        &kp W &kp E    &kp R &kp T     &kp Y   &kp U     &kp I     &kp O     &kp P
+   &mt LSHIFT A &kp S &kp D    &kp F &kp G     &kp H   &kp J     &kp K     &kp L     &mt LSHIFT SEMI 
+   &kp Z        &kp X &kp C    &kp V &kp B     &kp N   &kp M     &kp COMMA &kp DOT   &kp (FSLH)
+                &mo 1 &kp LGUI &kp SPACE       AS(RET) &kp BSPC  &mo 2
                         >;
                 };
 
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// | !     |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |
-// | BT1   | BT2 | BT3 | BT4 | BT5 |     | LFT | DWN |  UP | RGT |     |
-// | BTCLR |     |     |     |     |     |     |     |     |     |     |
+// ---------------------------------------------------------------------
+// |  1 |   2 |  3  |  4  |   5 |     |   6 |   7 |   8 |   9  |  0  |
+// | `  | '   |  "  |  -  |  _  |     | LFT | DWN |  UP | RGT  |  !  |
+// |    |     |     |     |     |     |  \  |  ?  |  .  |  /   |  +  |
 //               | GUI |     | SPC |     | ENT | ESC | TAB |
                         display-name = "Lower";
                         bindings = <
-   &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans 
-   &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans 
-                             &kp LGUI     &trans       &kp SPACE        AS(RET)   &kp ESC   &kp TAB
+   &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT          &kp CARET        &kp AMPS    &kp LS(N8)  &kp LPAR    &kp RPAR
+   &kp BSLH     &kp N4       &kp N3       &kp EQUAL    &kp LS(EQUAL)      &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp N8
+   &trans       &trans       &trans       &trans       &trans             &kp LS(RA(DOT))  &kp LS(M)   &kp LS(COMMA)      &kp LS(DOT) &kp LS(FSLH)
+                             &trans       &trans       &trans             &trans           &kp ESC     &kp TAB
                         >;
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9(  |  0)  |
-// | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /?  |  \|  |
-// | `~ |     |     |  ,< |  :  |     |  ;  |  .> | CTRL| META |      |
-//            | GUI | ESC | SPC |     | ENT |     | TAB |
+// --------------------------------------------------------------------
+// |  @ |  } |  ]  |  )  |  %  |     |  & |   ~ |  é |   è |   à  |
+// |  # |  { |  [  |  (  |  $  |     |  * |  |  |    |   ^ |   ç  |
+// |  < |  > |     |     |  €  |     |    |     |    |     |      |
+//           | GUI | ESC | SPC |     | ENT |     | TAB |
                         display-name = "Raise";
                         bindings = <
 
-   AS(N1)    AS(N2)    AS(N3)    AS(N4)    AS(N5)        AS(N6)    AS(N7)    AS(N8)    AS(N9)   AS(N0)
-   AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  AS(FSLH) AS(BSLH)
-   AS(GRAVE) &trans    &trans    AS(COMMA) &kp COLON     &kp SEMI  AS(DOT)   &kp LCTRL &kp RALT &trans
-                       &kp LGUI  &kp ESC   &kp SPACE     AS(RET)   &trans    &kp TAB
+   &kp RA(BSLH)      &kp RA(MINUS)     &kp RA(LS(MINUS)) &kp MINUS  &kp LS(APOS)        &kp N1    &kp RA(N)      &kp N2    &kp N7    &kp N0
+   &kp RA(LS(BSLH))  &kp RA(N5)        &kp RA(LS(N5))    &kp N5     &kp RBKT            &kp RBRC  &kp RA(LS(L))  &kp RBRC  &kp LBKT  &kp N9
+   &kp GRAVE         &kp LS(GRAVE)     &trans            AS(COMMA)  &kp RA(RBKT)        &trans    &trans         &trans    &trans    &trans
+                                       &trans            &trans     &trans              &trans   &trans         &trans
                         >;
                 };
         };
