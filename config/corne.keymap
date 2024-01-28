@@ -56,10 +56,10 @@
 //             | mo1 | CMD | SPC |     | ENT | BSPC | mo2  |
                         display-name = "Base";
                         bindings = <
-   AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
-   &mt LSHIFT A AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)   &mt LSHIFT SEMI 
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp COMMA &kp DOT   &kp (FSLH)
-        &mo 1 &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &mo 2
+   &kp Q        &kp W &kp E    &kp R &kp T     &kp Y   &kp U     &kp I     &kp O     &kp P
+   &mt LSHIFT A &kp S &kp D    &kp F &kp G     &kp H   &kp J     &kp K     &kp L     &mt LSHIFT SEMI 
+   &kp Z        &kp X &kp C    &kp V &kp B     &kp N   &kp M     &kp COMMA &kp DOT   &kp (FSLH)
+                &mo 1 &kp LGUI &kp SPACE       AS(RET) &kp BSPC  &mo 2
                         >;
                 };
 
