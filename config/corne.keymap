@@ -57,7 +57,7 @@
                         display-name = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
-   &hml LSHFT A AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SEMI)
+   &mt LSHIFT A AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)   &mt LSHIFT SEMI 
    AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   &kp M  &kp COMMA &kp DOT   &kp (FSLH)
         &mo 1 &kp LGUI &kp SPACE     AS(RET) &kp BSPC  &mo 2
                         >;
