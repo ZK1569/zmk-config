@@ -94,7 +94,7 @@
 // |  # |  & |  (  |  )  |  " |     |  \ |  -  |  _ |  |  |   €  |
 // |  < |  > |  [  |  ]  |  ' |     |    |     |    |     |   $  |
 //           |  ¨  |  ^  |  * |     |    |     |    |
-                        display-name = "raise";
+                        display-name = "Raise";
                         bindings = <
 
    &kp RA(BSLH)      &kp N2         &kp RA(N5)      &kp RA(MINUS)      &kp BSLH       &kp RA(N)        &kp N7    &kp N8         &kp N9    &kp N0
@@ -103,15 +103,14 @@
                                     &kp LS(LBKT)    &kp LBKT           &kp RBRC       &none            &none     &none
                         >;
                 }; 
-                   
-                   
-                motion{
+
+                motion {
 // --------------------------------------------------------------------
 // |    |    |    |    |    |     |  -  |  %  |     |      |     |
 // |    |    |    |    |    |     | LFT | DWN |  UP | RGT  |  $  |
 // |    |    |    |    |    |     |     |     |     |      |     |
 //           |    |    |    |     |     |     |     |
-                        display-name = "motion";
+                        display-name = "Motion";
                         bindings = <
 
    &none   &none   &none    &none   &none       &kp LBKT  &kp LS(APOS)  &none   &none      &none
@@ -120,7 +119,6 @@
                    &none    &none   &none       &none     &none         &none
                         >;
                 }; 
-                   
          };
  };
  
