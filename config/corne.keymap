@@ -41,7 +41,7 @@
 
         modnumber {
             bindings = <&mo 1>;
-            key-positions = <12 13>
+            key-positions = <12 13>;
         };
     };
 
