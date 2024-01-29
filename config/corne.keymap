@@ -69,21 +69,21 @@
    &kp Q  &kp W &kp E      &kp R    &kp T           &kp Y   &kp U    &kp I     &kp O     &kp P
    &kp A  &kp S &kp D      &kp F    &kp G           &kp H   &kp J    &kp K     &kp L     &kp SEMI 
    &kp Z  &kp X &kp C      &kp V    &kp B           &kp N   &kp M    &kp COMMA &kp DOT   &kp (FSLH)
-                &kp LSHIFT &kp BSPC &kp SPACE       AS(RET) &kp LGUI &mo 1
+                &kp LSHIFT &kp BSPC &kp SPACE       &lt 3 RET &kp LGUI &mo 2
                         >;
                 };
 
                 lower_layer {
 // ---------------------------------------------------------------------
-// |   |    |    |     |     |     |    |  7  |  8  |  9  |  /  |  %  
-// |   |    |    |     |     |     |    |  4  |  5  |  6  |  °  |  -  
-// |   |    |    |     |     |     |    |  1  |  2  |  3  |  ,  |  +  
-//               |     |     |     |    |  .  |  0  |  ,  |
+// |   |    |    |     |     |      |  /  |  7  |  8  |  9  |  %  
+// |   |    |    |     |     |      |  °  |  4  |  5  |  6  |  -  
+// |   |    |    |     |     |      |  ,  |  1  |  2  |  3  |  +  
+//               |     |     |      |  .  |  0  |  ,  |
                         display-name = "Lower";
                         bindings = <
-   &none   &none   &none    &none   &none      &kp AMPS       &kp LS(N8)  &kp LPAR   &kp LS(DOT)    &kp LS(APOS) 
-   &none   &none   &none    &none   &none      &kp DLLR       &kp PRCNT   &kp CARET  &kp LS(MINUS)  &kp EQUAL
-   &none   &none   &none    &none   &none      &kp EXCL       &kp AT      &kp HASH   &kp M          &kp LS(FSLH)
+   &none   &none   &none    &none   &none      &kp LS(DOT)    &kp LS(N8)  &kp LPAR   &kp AMPS    &kp LS(APOS) 
+   &none   &none   &none    &none   &none      &kp LS(MINUS)  &kp PRCNT   &kp CARET  &kp DLLR    &kp EQUAL
+   &none   &none   &none    &none   &none      &kp M          &kp AT      &kp HASH   &kp EXCL    &kp LS(FSLH)
                    &none    &none   &none      &kp LS(COMMA)  &kp RPAR    &kp M 
                         >;
                 };
