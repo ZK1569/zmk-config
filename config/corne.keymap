@@ -44,6 +44,11 @@
             bindings = <&mo 1>;
             key-positions = <12 13>;
         };
+
+        linux_or_mac {
+            bindings = <&tog 4>;
+            key-positions = <0 4>;
+        };
     };
 
     behaviors {
@@ -126,13 +131,13 @@
 // |  A  |  Z  |  E  |  R  |  T  |     |  Y  |  U   |  I   |   O   | P |
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |   L   | M | 
 // |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | = |
-//             | SIFT| BSPC| SPC |     | ENT | COM  | mo2  |
+//             | SIFT| BSPC| SPC |     | ENT | COM  | mo6  |
                         display-name = "L_Base";
                         bindings = <
    &kp Q  &kp W &kp E      &kp R    &kp T           &kp Y   &kp U    &kp I     &kp O     &kp P
    &kp A  &kp S &kp D      &kp F    &kp G           &kp H   &kp J    &kp K     &kp L     &kp SEMI 
    &kp Z  &kp X &kp C      &kp V    &kp B           &kp N   &kp M    &kp COMMA &kp DOT   &kp EQUAL
-                &kp LSHIFT &kp BSPC &kp SPACE       &lt 3 RET &kp LGUI &mo 2
+                &kp LSHIFT &kp BSPC &kp SPACE       &lt 7 RET &kp LGUI &mo 6
                         >;
                 };
 
