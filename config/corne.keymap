@@ -40,15 +40,15 @@
             key-positions = <28 29>;
         };
 
+        linux_or_mac {
+            bindings = <&tog 4>;
+            key-positions = <0 4>;
+        };
+
         modnumber {
             bindings = <&mo 1>;
             key-positions = <12 13>;
             layers = <0 4>;
-        };
-
-        linux_or_mac {
-            bindings = <&tog 4>;
-            key-positions = <0 4>;
         };
     };
 
@@ -114,9 +114,9 @@
                 motion {
 // --------------------------------------------------------------------
 // | 🔊  |  ⏪️ |  ⏯️  |  ⏩️ |     |     |  -  |  %  |     |      |
-// | 🔈  |  ☀  | 👾  |  🔒 |     | LFT | DWN |  UP | RGT |  $   |
-// | 🔇  |  🌑 |     |     |     |     |     |     |     |      |
-//             |     |     |     |     |     |     |     |
+// | 🔈  |  ☀  |  👾  |  🔒 |     | LFT | DWN |  UP | RGT |  $   |
+// | 🔇  |  🌑 |      |     |     |     |     |     |     |      |
+//             |      |     |     |     |     |     |     |
                         display-name = "Media & Direction";
                         bindings = <
 
@@ -187,4 +187,3 @@
                 }; 
          };
  };
- 
