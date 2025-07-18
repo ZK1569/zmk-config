@@ -43,6 +43,7 @@
         modnumber {
             bindings = <&mo 1>;
             key-positions = <12 13>;
+            layers = <0 4>; 
         };
 
         linux_or_mac {
@@ -178,7 +179,7 @@
 //             |     |     |     |     |     |     |     |
                         display-name = "L_Media & Direction";
                         bindings = <
-   &kp C_VOLUME_UP     &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &none       &none     &kp N6        &kp COLON  &none      &none
+   &kp C_VOLUME_UP     &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &none       &none     &kp N6        &kp LS(N5)  &none      &none
    &kp C_VOLUME_DOWN   &kp C_BRI_UP     &none               &kp C_POWER   &none       &kp LEFT  &kp DOWN      &kp UP     &kp RIGHT  &kp RBKT
    &kp C_MUTE          &kp C_BRI_DN     &kp C_BRI_DN        &none         &none       &none     &none         &none      &none      &none
                        &none            &none               &none         &none       &none     &none
