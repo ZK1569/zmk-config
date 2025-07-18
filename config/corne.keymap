@@ -48,7 +48,7 @@
         modnumber {
             bindings = <&mo 1>;
             key-positions = <12 13>;
-            layers = <0 4>;
+            layers = <-1>;
         };
     };
 
