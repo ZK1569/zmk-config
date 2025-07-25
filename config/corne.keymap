@@ -45,17 +45,6 @@
             key-positions = <0 4>;
         };
 
-        modnumber {
-            bindings = <&mo 1>;
-            key-positions = <12 13>;
-            layers = <0>;
-        };
-
-        mod_number_linux {
-            bindings = <&mo 5>;
-            key-positions = <12 13>;
-            layers = <4>;
-        };
     };
 
     behaviors {
@@ -79,10 +68,10 @@
 //             | SIFT| BSPC| SPC |     | ENT | COM  | mo2  |
                         display-name = "Base";
                         bindings = <
-   &kp Q  &kp W &kp E      &kp R    &kp T           &kp Y   &kp U    &kp I     &kp O     &kp P
-   &kp A  &kp S &kp D      &kp F    &kp G           &kp H   &kp J    &kp K     &kp L     &kp SEMI 
-   &kp Z  &kp X &kp C      &kp V    &kp B           &kp N   &kp M    &kp COMMA &kp DOT   &kp (FSLH)
-                &kp LSHIFT &kp BSPC &kp SPACE       &lt 3 RET &kp LGUI &mo 2
+   &kp Q  &kp W &kp E      &kp R      &kp T           &kp Y     &kp U    &kp I     &kp O     &kp P
+   &kp A  &kp S &kp D      &lt 1 F    &kp G           &kp H     &kp J    &kp K     &kp L     &kp SEMI 
+   &kp Z  &kp X &kp C      &kp V      &kp B           &kp N     &kp M    &kp COMMA &kp DOT   &kp (FSLH)
+                &kp LSHIFT &kp BSPC   &kp SPACE       &lt 3 RET &kp LGUI &mo 2
                         >;
                 };
 
@@ -142,7 +131,7 @@
                         display-name = "L_Base";
                         bindings = <
    &kp Q  &kp W &kp E      &kp R    &kp T           &kp Y     &kp U     &kp I     &kp O     &kp P
-   &kp A  &kp S &kp D      &kp F    &kp G           &kp H     &kp J     &kp K     &kp L     &kp SEMI 
+   &kp A  &kp S &kp D      &lt 5 F    &kp G           &kp H     &kp J     &kp K     &kp L     &kp SEMI 
    &kp Z  &kp X &kp C      &kp V    &kp B           &kp N     &kp M     &kp COMMA &kp DOT   &kp EQUAL
                 &kp LSHIFT &kp BSPC &kp SPACE       &lt 7 RET &kp LWIN &mo 6
                         >;
@@ -171,10 +160,10 @@
 //           |  ¨  |  ^  |  * |     |    |     |    |
                         display-name = "L_@#&<>";
                         bindings = <
-   &kp RA(N0)       &kp N2              &kp RA(N4)      &kp RA(DLLR)            &kp RA(N7)      &kp RA(N2)    &kp N7        &kp QMARK  &kp N9          &kp N0
-   &kp RA(N3)       &kp N1              &kp N5          &kp MINUS                   &kp N3          &kp RA(N8)    &kp N6        &kp N8         &kp RA(N6)  &kp RA(E)
-   &kp LESS_THAN    &kp GREATER_THAN    &kp RA(N5)      &kp RA(LS(MINUS))           &kp N4          &none         &none         &none          &none       &kp RBKT
-                                        &kp LS(LBKT)    &kp LBKT                    &kp RA(BSLH)    &none         &none         &none
+   &kp RA(N0)       &kp N2              &kp RA(N4)      &kp RA(MINUS)        &kp RA(N7)           &kp RA(N2)    &kp N7        &kp SLASH      &kp N9          &kp N0
+   &kp RA(N3)       &kp N1              &kp N5          &kp MINUS            &kp N3               &kp RA(N8)    &kp N6        &kp N8         &kp RA(N6)  &kp RA(E)
+   &kp TILDE        &kp LS(TILDE)       &kp RA(N5)      &kp RA(LS(MINUS))    &kp N4               &none         &none         &none          &none       &kp RBKT
+                                        &kp LS(LBKT)    &kp LBKT             &kp RA(BSLH)         &none         &none         &none
                         >;
                 }; 
                 linux_motion {
