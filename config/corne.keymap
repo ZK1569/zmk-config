@@ -66,7 +66,7 @@
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |   L   | M | 
 // |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | = |
 //             | SIFT| BSPC| SPC |     | ENT | COM  | mo2  |
-                        display-name = "Base";
+                        display-name = "Mac";
                         bindings = <
    &kp Q  &kp W &kp E      &kp R      &kp T           &kp Y     &kp U    &kp I     &kp O     &kp P
    &kp A  &kp S &kp D      &lt 1 F    &kp G           &kp H     &kp J    &kp K     &kp L     &kp SEMI 
@@ -128,7 +128,7 @@
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |   L   | M | 
 // |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | = |
 //             | SIFT| BSPC| SPC |     | ENT | COM  | mo6  |
-                        display-name = "L_Base";
+                        display-name = "Linux";
                         bindings = <
    &kp Q  &kp W &kp E      &kp R    &kp T           &kp Y     &kp U      &kp I     &kp O     &kp P
    &kp A  &kp S &kp D      &lt 5 F  &kp G           &kp H     &kp J      &kp K     &kp L     &kp SEMI 
@@ -158,7 +158,7 @@
 // |  # |  & |  (  |  )  |  " |     |  \ |  -  |  _ |  |  |   €  |
 // |  < |  > |  [  |  ]  |  ' |     |    |     |    |     |   $  |
 //           |  ¨  |  ^  |  * |     |    |     |    |
-                        display-name = "L_@#&<>";
+                        display-name = "L_Autre";
                         bindings = <
    &kp RA(N0)       &kp N2              &kp RA(N4)      &kp LS(RA(MINUS))    &kp RA(N7)           &kp RA(N2)    &kp N7        &kp SLASH      &kp N9          &kp N0
    &kp RA(N3)       &kp N1              &kp N5          &kp MINUS            &kp N3               &kp RA(N8)    &kp N6        &kp N8         &kp RA(N6)  &kp RA(E)
@@ -172,7 +172,7 @@
 // | 🔈  |  ☀  |  👾 |  🔒 |     | LFT | DWN |  UP | RGT |  $   |
 // | 🔇  |  🌑 |     |     |     |     |     |     |     |      |
 //             |     |     |     |     |     |     |     |
-                        display-name = "L_Media & Direction";
+                        display-name = "L_Media";
                         bindings = <
    &kp C_VOLUME_UP     &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &none       &none     &kp N6        &kp LS(N5)  &none      &none
    &kp C_VOLUME_DOWN   &kp C_BRI_UP     &none               &kp C_POWER   &none       &kp LEFT  &kp DOWN      &kp UP     &kp RIGHT  &kp RBKT
@@ -190,7 +190,7 @@
                         display-name = "i3";
                         bindings = <
    &kp Q  &kp W &kp E   &kp R     &kp RET       &none     &kp DLLR  &kp PRCNT   &kp CARET    &none
-   &kp A  &kp S &kp D   &kp F     &kp G         &kp j     &kp k     &kp l       &kp COMMA    &none
+   &kp A  &kp S &kp D   &kp F     &kp G         &kp J     &kp K     &kp L       &kp COMMA    &none
    &kp Z  &kp X &kp C   &kp V     &kp B         &kp SPACE &kp EXCL  &kp AT      &kp HASH     &kp LSHIFT
                 &none   &none     &kp LGUI      &none     &none     &none
                         >;
