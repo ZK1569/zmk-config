@@ -45,7 +45,7 @@
             key-positions = <0 4>;
         };
 
-    };
+    }
 
     behaviors {
         as: auto_shift {
@@ -108,17 +108,17 @@
 
                 motion {
 // --------------------------------------------------------------------
-// | 🔊  |  ⏪️ |  ⏯️  |  ⏩️ |     |     |  -  |  %  |     |      |
-// | 🔈  |  ☀  |  👾  |  🔒 |     | LFT | DWN |  UP | RGT |  $   |
-// | 🔇  |  🌑 |      |     |     |     |     |     |     |      |
-//             |      |     |     |     |     |     |     |
+// | 🔇  |  ⏪️ |  ⏯️  |  ⏩️ | BLT 0|     |    |  -  |  %  |     |      |
+// | 🔊  |  ☀  |  👾  |  🔒 | BLT 1|     |LFT | DWN |  UP | RGT |  $   |
+// | 🔈  |  🌑 |      |     | BLT 2|     |    |     |     |     |      |
+//             |      |     | BLT R|     |    |     |     |     |
                         display-name = "Media & Direction";
                         bindings = <
 
-   &kp C_VOLUME_UP     &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &none       &kp EQUAL &kp LS(APOS)  &none   &none      &none
-   &kp C_VOLUME_DOWN   &kp C_BRI_UP     &none               &kp C_POWER   &none       &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &kp RBKT
-   &kp C_MUTE          &kp C_BRI_DN     &kp C_BRI_DN        &none         &none       &none     &none         &none   &none      &none
-                       &none            &none               &none         &none       &none     &none
+   &kp C_MUTE          &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &bt BT_SEL 0       &kp EQUAL &kp LS(APOS)  &none   &none      &none
+   &kp C_VOLUME_UP     &kp C_BRI_UP     &none               &kp C_POWER   &bt BT_SEL 1       &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &kp RBKT
+   &kp C_VOLUME_DOWN   &kp C_BRI_DN     &kp C_BRI_DN        &none         &bt BT_SEL 2       &none     &none         &none   &none      &none
+                       &none            &none               &none         &bt BT_CLR         &none     &none
                         >;
                 }; 
 
@@ -161,22 +161,22 @@
                         display-name = "L_Autre";
                         bindings = <
    &kp RA(N0)       &kp N2              &kp RA(N4)      &kp LS(RA(MINUS))    &kp RA(N7)           &kp RA(N2)    &kp N7        &kp SLASH      &kp N9          &kp N0
-   &kp RA(N3)       &kp N1              &kp N5          &kp MINUS            &kp N3               &kp RA(N8)    &kp N6        &kp N8         &kp RA(N6)  &kp RA(E)
-   &kp TILDE        &kp LS(TILDE)       &kp RA(N5)      &kp RA(MINUS)        &kp N4               &none         &none         &none          &none       &kp RBKT
+   &kp RA(N3)       &kp N1              &kp N5          &kp MINUS            &kp N3               &kp RA(N8)    &kp N6        &kp N8         &kp RA(N6)      &kp RA(E)
+   &kp TILDE        &kp LS(TILDE)       &kp RA(N5)      &kp RA(MINUS)        &kp N4               &none         &none         &none          &none           &kp RBKT
                                         &kp LS(LBKT)    &kp LBKT             &kp RA(BSLH)         &none         &none         &none
                         >;
                 }; 
                 linux_motion {
 // --------------------------------------------------------------------
-// | 🔊  |  ⏪️ |  ⏯️ |  ⏩️ | BLT 1|     |  -  |  %  |     |      |
-// | 🔈  |  ☀  |  👾 |  🔒 | BLT 2| LFT | DWN |  UP | RGT |  $   |
-// | 🔇  |  🌑 |     |     | BLT 3|     |     |     |     |      |
-//             |     |     | BLT R|     |     |     |     |
+// | 🔇  |  ⏪️ |  ⏯️ |  ⏩️ | BLT 0|    |    |  -  |  %  |     |      |
+// | 🔊  |  ☀  |  👾 |  🔒 | BLT 1|    |LFT | DWN |  UP | RGT |  $   |
+// | 🔊  |  🌑 |     |     | BLT 2|    |    |     |     |     |      |
+//             |     |     | BLT R|    |    |     |     |     |
                         display-name = "L_Media";
                         bindings = <
-   &kp C_MUTE          &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &bt BT_SEL 1              &none     &kp N6        &kp LS(N5)  &none      &none
-   &kp C_VOLUME_UP     &kp C_BRI_UP     &none               &kp C_POWER   &bt BT_SEL 2              &kp LEFT  &kp DOWN      &kp UP     &kp RIGHT  &kp RBKT
-   &kp C_VOLUME_DOWN   &kp C_BRI_DN     &kp C_BRI_DN        &none         &bt BT_SEL 3              &none     &none         &none      &none      &none
+   &kp C_MUTE          &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &bt BT_SEL 0              &none     &kp N6        &kp LS(N5)  &none      &none
+   &kp C_VOLUME_UP     &kp C_BRI_UP     &none               &kp C_POWER   &bt BT_SEL 1              &kp LEFT  &kp DOWN      &kp UP     &kp RIGHT  &kp RBKT
+   &kp C_VOLUME_DOWN   &kp C_BRI_DN     &kp C_BRI_DN        &none         &bt BT_SEL 2              &none     &none         &none      &none      &none
                        &none            &none               &none         &bt BT_CLR                &none     &none
                         >;
                 }; 
@@ -184,7 +184,7 @@
                 i3 {
 // --------------------------------------------------------------------
 // | a | z | e | r | t |       |     |  4  |  5  |  6  |      |
-// | q | s | d | f | g |       | j   | k   |  l  | ;   |      |
+// | q | s | d | f | g |       |  j  | k   |  l  | ;   |      |
 // | w | x | c | v | b |       |SPACE|  1  |  2  |  3  | SHIFT|
 //         |   |   |WIN|       |     |     |     |  
                         display-name = "i3";
