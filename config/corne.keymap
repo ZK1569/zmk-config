@@ -42,7 +42,7 @@
 
         linux_or_mac {
             bindings = <&tog 4>;
-            key-positions = <0 4>;
+            key-positions = <0 4 5 9>; 
         };
 
     };
@@ -185,7 +185,7 @@
                 i3 {
 // --------------------------------------------------------------------
 // | a | z | e | r | t |       |     |  4  |  5  |  6  |      |
-// | q | s | d | f | g |       |  j  | k   |  l  | ;   |      |
+// | q | s | d | f | g |       |  j  |  k  |  l  |  ;  |      |
 // | w | x | c | v | b |       |SPACE|  1  |  2  |  3  | SHIFT|
 //         |   |   |WIN|       |     |     |     |  
                         display-name = "i3";
