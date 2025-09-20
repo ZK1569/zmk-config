@@ -42,7 +42,7 @@
 
         linux_or_mac {
             bindings = <&tog 4>;
-            key-positions = <0 9>; 
+            key-positions = <0 4 5 9>; 
         };
 
     };
