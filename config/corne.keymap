@@ -14,7 +14,7 @@
 
 / {
     chosen {
-      zmk,matrix_transform = &five_column_transform;
+        zmk,physical-layout = &foostan_corne_5col_layout;
     };
 
     combos {
@@ -86,7 +86,7 @@
    &none   &none   &none    &none   &none      &kp LS(DOT)   &kp AMPS  &kp LS(N8)  &kp LPAR    &kp LS(APOS) 
    &none   &none   &none    &none   &none      &kp LS(MINUS) &kp DLLR  &kp PRCNT   &kp CARET   &kp EQUAL
    &none   &none   &none    &none   &none      &kp M         &kp EXCL  &kp AT      &kp HASH    &kp LS(FSLH)
-                   &none    &none   &none      &kp RPAR  &kp LS(COMMA)    &kp M 
+                   &none    &none   &none      &kp RPAR      &kp LS(COMMA)    &kp M 
                         >;
                 };
 
@@ -96,7 +96,7 @@
 // |  # |  & |  (  |  )  |  " |     |  \ |  -  |  _ |  |  |   €  |
 // |  < |  > |  [  |  ]  |  ' |     |    |     |    |     |   $  |
 //           |  ¨  |  ^  |  * |     |    |     |    |
-                        display-name = "@#&<>";
+                        display-name = "other_shit";
                         bindings = <
 
    &kp RA(BSLH)      &kp N2         &kp RA(N5)      &kp RA(MINUS)      &kp BSLH       &kp RA(N)        &kp N7        &kp N8         &kp N9        &kp N0
@@ -109,7 +109,7 @@
                 motion {
 // --------------------------------------------------------------------
 // | 🔇  |  ⏪️ |  ⏯️  |  ⏩️ | BLT 0|     |    |  -  |  %  |     |      |
-// | 🔊  |  ☀  |  👾  |  🔒 | BLT 1|     |LFT | DWN |  UP | RGT |  $   |
+// | 🔊  |  ☀  |      |  🔒 | BLT 1|     |LFT | DWN |  UP | RGT |  $   |
 // | 🔈  |  🌑 |      |     | BLT 2|     |    |     |     |     |      |
 //             |      |     | BLT R|     |    |     |     |     |
                         display-name = "Media & Direction";
@@ -117,7 +117,7 @@
 
    &kp C_MUTE          &kp C_PREVIOUS   &kp C_PLAY_PAUSE    &kp C_NEXT    &bt BT_SEL 0       &kp EQUAL &kp LS(APOS)  &none   &none      &none
    &kp C_VOLUME_UP     &kp C_BRI_UP     &none               &kp C_POWER   &bt BT_SEL 1       &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &kp RBKT
-   &kp C_VOLUME_DOWN   &kp C_BRI_DN     &kp C_BRI_DN        &none         &bt BT_SEL 2       &none     &none         &none   &none      &none
+   &kp C_VOLUME_DOWN   &kp C_BRI_DN     &none               &none         &bt BT_SEL 2       &none     &none         &none   &none      &none
                        &none            &none               &none         &bt BT_CLR         &none     &none
                         >;
                 }; 
@@ -127,13 +127,13 @@
 // |  A  |  Z  |  E  |  R  |  T  |     |  Y  |  U   |  I   |   O   | P |
 // |  Q  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |   L   | M | 
 // |  W  |  X  |  C  |  V  |  B  |     |  N  |  ,   |  ;   |   :   | = |
-//             | SIFT| BSPC| SPC |     | ENT | COM  | mo6  |
+//             | SIFT| BSPC| SPC |     | ENT | WIN  | mo6  |
                         display-name = "Linux";
                         bindings = <
    &kp Q  &kp W &kp E      &kp R    &kp T           &kp Y     &kp U      &kp I     &kp O     &kp P
    &kp A  &kp S &kp D      &lt 5 F  &kp G           &kp H     &kp J      &kp K     &kp L     &kp SEMI 
    &kp Z  &kp X &kp C      &kp V    &kp B           &kp N     &kp M      &kp COMMA &kp DOT   &kp EQUAL
-                &kp LSHIFT &kp BSPC &kp SPACE       &lt 7 RET &lt 8 LWIN &mo 6
+                &kp LSHIFT &kp BSPC &kp SPACE       &lt 7 RET &kp LWIN   &mo 6
                         >;
                 };
 
@@ -162,7 +162,7 @@
                         bindings = <
    &kp RA(N0)       &kp N2              &kp RA(N4)      &kp LS(RA(MINUS))    &kp RA(N7)           &kp RA(N2)    &kp N7        &kp SLASH      &kp N9          &kp N0
    &kp RA(N3)       &kp N1              &kp N5          &kp MINUS            &kp N3               &kp RA(N8)    &kp N6        &kp N8         &kp RA(N6)      &kp RA(E)
-   &kp TILDE        &kp LS(TILDE)       &kp RA(N5)      &kp RA(MINUS)        &kp N4               &none         &none         &none          &none           &kp RBKT
+   &kp LT           &kp GT              &kp RA(N5)      &kp RA(MINUS)        &kp N4               &none         &none         &none          &none           &kp RBKT
                                         &kp LS(LBKT)    &kp LBKT             &kp RA(BSLH)         &none         &none         &none
                         >;
                 }; 
@@ -182,19 +182,5 @@
                         >;
                 }; 
 
-                i3 {
-// --------------------------------------------------------------------
-// | a | z | e | r | t |       |     |  4  |  5  |  6  |      |
-// | q | s | d | f | g |       |  j  |  k  |  l  |  ;  |      |
-// | w | x | c | v | b |       |SPACE|  1  |  2  |  3  | SHIFT|
-//         |   |   |WIN|       |     |     |     |  
-                        display-name = "i3";
-                        bindings = <
-   &kp Q  &kp W &kp E   &kp R     &kp RET       &none     &kp DLLR  &kp PRCNT   &kp CARET    &none
-   &kp A  &kp S &kp D   &kp F     &kp G         &kp J     &kp K     &kp L       &kp COMMA    &none
-   &kp Z  &kp X &kp C   &kp V     &kp B         &kp SPACE &kp EXCL  &kp AT      &kp HASH     &kp LSHIFT
-                &none   &none     &kp LGUI      &none     &none     &none
-                        >;
-                }; 
          };
  };
